@@ -54,8 +54,8 @@ def main():
     print(f"Answer for example 1: {findMaxConsecutiveOnes(example_1)}")
     print(f"Answer for example 2: {findMaxConsecutiveOnes(example_2)}")
     simple_time = timeit(lambda: findMaxConsecutiveOnes(example_1))
-    enchanced_time = timeit(lambda: findMaxConsecutveOnes_Enchanced(example_1))
-    print(f"{simple_time=:.02f} \n{enchanced_time=:0.2f}")
+    enhanced_time = timeit(lambda: findMaxConsecutveOnes_Enchanced(example_1))
+    print(f"{simple_time=:.02f} \n{enhanced_time=:0.2f}")
 
 
 if __name__ == "__main__":
