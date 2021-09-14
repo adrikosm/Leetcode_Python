@@ -35,6 +35,5 @@ def main():
     print(f"{solution_1_time=:0.2f}s")
 
 
-
 if __name__ == "__main__":
     main()
