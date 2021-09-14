@@ -16,7 +16,7 @@ import timeit
 def sorted_squares_simple(nums):
     sorted_list = []
     for i in nums:
-        sorted_list.append(abs(i) ** 2)
+        sorted_list.append(i * i)
     return sorted(sorted_list)
 
 
@@ -34,12 +34,15 @@ def sorted_squares_second(nums):
 
 def main():
     nums = [-4, -1, 0, 3, 10]
-    sorted_first = timeit.timeit(lambda: sorted_squares_simple(nums), number=10)
-    sorted_second = timeit.timeit(lambda: sortedSquares(nums), number=10)
-    sorted_third = timeit.timeit(lambda: sorted_squares_second(nums), number=10)
-    print(f"{sorted_first}")
-    print(f"{sorted_second}")
-    print(f"{sorted_third}")
+    # print(sorted_squares_simple(nums))
+    # print(sortedSquares(nums))
+    # print(sorted_squares_second(nums))
+    sorted_first = timeit.timeit(lambda: sorted_squares_simple(nums), number=12)
+    sorted_second = timeit.timeit(lambda: sortedSquares(nums), number=12)
+    sorted_third = timeit.timeit(lambda: sorted_squares_second(nums), number=12)
+    print(f"{sorted_first:0.8f}")
+    print(f"{sorted_second:0.8f}")
+    print(f"{sorted_third:0.8f}")
 
 
 if __name__ == "__main__":
