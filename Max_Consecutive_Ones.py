@@ -13,7 +13,7 @@ Constraints:
     1 <= nums.length <= 10^5
     nums[i] is either 0 or 1.
 """
-from timeit import timeit
+list
 
 
 def findMaxConsecutiveOnes(nums):
@@ -56,7 +56,7 @@ def main():
 
     simple_time = timeit(lambda: findMaxConsecutiveOnes(example_1))
     enhanced_time = timeit(lambda: findMaxConsecutveOnes_Enchanced(example_1))
-    print(f"{simple_time=:.02f} \n{enhanced_time=:0.2f}")
+    print(f"{simple_time = :.02f} \n{enhanced_time = :0.2f}")
 
 
 if __name__ == "__main__":
