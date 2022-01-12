@@ -14,52 +14,18 @@ import time
 import timeit
 
 
-def sorted_squares_simple(nums):
-    start = time.time()
-    sorted_list = []
-    for i in nums:
-        sorted_list.append(i * i)
-    sorted(sorted_list)
-    end = time.time()
-    return sorted_list, end - start
-
-
-def sorted_squares_second(nums):
-    start = time.time()
-    for i in range(len(nums)):
-        nums[i] = nums[i] * nums[i]
-    end = time.time()
-    sorted(nums)
-    return nums, end - start
-
-
-def sortedSquares(nums):
-    start = time.time()
-    res = sorted([n * n for n in nums])
-    end = time.time()
-    return res, end - start
-
 def another_try(nums):
-    result = sorted([n*n for n in nums])
+    result = sorted([n * n for n in nums])
     return result
+
 
 def main():
     nums = [-4, -1, 0, 3, 10]
-    # sorted_1, time_1 = sorted_squares_simple(nums)
-    # sorted_2, time_2 = sorted_squares_second(nums)
-    # sorted_3, time_3 = sortedSquares(nums)
     sorted_4 = another_try(nums)
 
     print(f"Original Array{nums}")
     print(f"Expected output: [0,1,9,16,100]\n")
     print(f"Sorted try {sorted_4}")
-    # print(f"Sorted 1 {sorted_1}")
-    # print(f"Sorted 2 {sorted_2}")
-    # print(f"Sorted 3 {sorted_3}")
-
-    # print(f"Time of 1 {time_1:0.9f}")
-    # print(f"Time of 2 {time_2:0.9f}")
-    # print(f"Time of 3 {time_3:0.9f}")
 
 
 if __name__ == "__main__":
