@@ -8,8 +8,7 @@ Ex.
 
 
 def filter_list(l):
-    return [i for i in l if not isinstance(i, str)]
-    return [x for x in l if type(x) is not str]
+  return [i for i in l if type(i) is int]
 
 
 
