@@ -1,5 +1,5 @@
 # Codewars
-##6kyu
+## 6kyu
 - Morse Decodes
-##7kyu
+## 7kyu
 - Filter List
