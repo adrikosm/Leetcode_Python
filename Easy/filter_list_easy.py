@@ -14,6 +14,7 @@ def filter_list(l):
 
 
 def main(): 
+    print(filter_list([1,2,'a',3,'b']))
     print(filter_list([1,2,'a','b'])) # Expected [1,2]
     print(filter_list([1,'a','b',0,15])) # Expected [1,0,15]
     print(filter_list([1,2,'aasf','1','123',123]))  # Expected [1,2,123]
