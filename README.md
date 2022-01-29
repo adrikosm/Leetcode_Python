@@ -1,2 +1,2 @@
-# Leetcode_Python
-Answering  leetcode questions using python
+# Interview questions
+Includes Leetcode codewars and hackerrank questions categorized by hardness or level
