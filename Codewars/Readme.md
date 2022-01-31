@@ -3,3 +3,4 @@
 - Morse Decodes
 ## 7kyu
 - Filter List
+- Is triangle
