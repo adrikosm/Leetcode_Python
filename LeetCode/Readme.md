@@ -7,5 +7,6 @@
 
 ## Medium
 - Reverse Words
+- Decode String
 
 ## Hard
