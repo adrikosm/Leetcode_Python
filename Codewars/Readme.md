@@ -6,3 +6,4 @@
 ## 7kyu
 - Filter List
 - Is triangle
+- Is Isogram
