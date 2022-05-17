@@ -2,6 +2,7 @@
 ## 6kyu
 - Morse Decodes
 -  Multiple of 3 or 5
+- Convert to camel case
 
 ## 7kyu
 - Filter List
