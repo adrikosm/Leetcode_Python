@@ -10,22 +10,21 @@ Explanation: The answer is "abc", with the length of 3
 """
 
 
+from numpy import char
+
+
 def lengthOfLongestSubstring(s) -> int:
     """
     Use hashmap in order to get both the value and
     the index
     """
     chars = {}
-    start = 0
-    max_length = 0
-
+    max_length = start = 0
     for key, value in enumerate(s):
-        if value in chars:
-            start = max(start, chars[value] + 1)
-
-        max_length = max(max_length, key - start + 1)
-        chars[value] = key
-    return max_length
+        if value in chars and start <= chars[value]:
+            start = chars[value]+1
+        else:
+            max_length = max(max_length, key - start+1)
 
 
 def main():
