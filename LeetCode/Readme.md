@@ -9,5 +9,6 @@
 ## Medium
 - Reverse Words
 - Decode String
+- Longest substring without repeating characters
 
 ## Hard
