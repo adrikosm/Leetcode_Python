@@ -19,14 +19,24 @@ Ex.
 
 
 def order_weight(strng):
-    pass
+    item = sorted(strng.split(' '))
+    value = sorted(item, key=find_weight)
+    return ' '.join(value)
+
+
+def find_weight(weight):
+    return sum([int(item) for item in weight])
+
+
+def order_weight_one_liner(strg):
+    return ' '.join(sorted(sorted(strg.split(' ')), key=lambda x: sum(int(c) for c in x)))
 
 
 def main():
-    # Expected "100 180 90 56 65 74 68 86 99"
+    print(order_weight("55 63 42 100"))
+    print(order_weight("55 56 77 100 99 110"))
     print(order_weight("56 65 74 100 99 68 86 180 90"))
     print(order_weight("2000 10003 1234000 44444444 9999 11 11 22 123"))
-
 
 
 if __name__ == "__main__":
