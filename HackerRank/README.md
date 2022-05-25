@@ -6,6 +6,8 @@
 - Plus Minus
 - Time Conversion
 - Breaking the Records
+- Camel Case 4
+
 
 ## Week 2
 
