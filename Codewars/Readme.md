@@ -1,4 +1,7 @@
 # Codewars
+## 5kyu
+- Weight for weight
+
 ## 6kyu
 - Morse Decodes
 -  Multiple of 3 or 5

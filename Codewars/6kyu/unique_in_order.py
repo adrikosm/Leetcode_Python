@@ -31,7 +31,6 @@ def unique_in_order_second(iterable):
 
 
 def main():
-    # EXPECTED ['A', 'B', 'C', 'D', 'A', 'B']
     print(unique_in_order('AAAABBBCCDAABBB'))
     print(unique_in_order([1, 2, 3, 3, 4, 4, 4, 1]))  # EXPECTED [1,2,3,4,1]
     print(unique_in_order_second('AAAABBBCCDAABBB'))
